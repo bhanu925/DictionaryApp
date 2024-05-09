@@ -19,7 +19,7 @@ const arr = [
 
     const handleSearch =()=>{
         if(searchText){
-            const word = dictionary.find((item,index)=>item.word.toLowerCase() === searchText)
+            const word = dictionary.find((item,index)=>item.word.toLowerCase() === searchText.toLowerCase())
             if(word){
                 setDefinition(word.meaning);
             }  
