@@ -28,7 +28,6 @@ const arr = [
             }         
         }
     }
-
   return (
     <div className='container'>
         <h1>Dictionary App</h1>
@@ -38,8 +37,11 @@ const arr = [
              className="input" />
             <button onClick={handleSearch} className="search">Search</button>
         </div>  
-        <h4>Definition:</h4>
-        <p>{definition}</p>
+        <div>
+            <h3>Definition:</h3>
+            <p>{definition}</p>
+        </div>
+      
     </div>
   )
 }
