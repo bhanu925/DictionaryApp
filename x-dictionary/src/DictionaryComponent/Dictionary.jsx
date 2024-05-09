@@ -24,7 +24,7 @@ const arr = [
                 setDefinition(word.meaning);
             }  
             else{
-                setDefinition('Word not found in the dictionary.');
+                setDefinition("Word not found in the dictionary.");
             }         
         }
     }
@@ -37,9 +37,9 @@ const arr = [
              value={searchText} onChange={(e)=>setSearchText(e.target.value)} 
              className="input" />
             <button onClick={handleSearch} className="search">Search</button>
-        </div>
+        </div>  
         <h4>Definition:</h4>
-        {<p>{definition}</p>}
+        <p>{definition}</p>
     </div>
   )
 }
